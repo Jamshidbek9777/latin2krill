@@ -1,3 +1,9 @@
 {
-  "nav1": "Uz"
+  "switcher1": "Lotin",
+  "switcher2": "Kirill",
+
+  "placeholderInput": "Matnni shu yerga yozing yoki joylashtiring...",
+
+  "footer1": "Kirill konvertori",
+  "footer2": "Ushbu vosita o‘zbek tilidagi matnlarni lotin va kirill yozuvlari o‘rtasida oson va aniq tarzda aylantirishga yordam beradi. Imlo to‘g‘riligini saqlagan holda, yozuvlar orasidagi o‘tishni silliq qiladi."
 }

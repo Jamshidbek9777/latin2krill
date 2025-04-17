@@ -8,6 +8,7 @@ import {
   Undo2,
   X,
 } from "lucide-react";
+import { t } from "i18next";
 
 const ConverterBoard = () => {
   const [input, setInput] = useState("");
@@ -76,9 +77,11 @@ const ConverterBoard = () => {
 
   return (
     <Wrapper>
-      <div className="flex justify-center items-center gap-4 mt-6 bg-white rounded-lg py-2">
-        <div className="w-20">
-          <h1>{mode === "latin-to-cyrillic" ? "Lotin" : "Кирилл"}</h1>
+      <div className="flex justify-center items-center gap-4 mt-6 bg-white rounded-lg py-3">
+        <div className="w-32 text-center">
+          <h1>
+            {mode === "latin-to-cyrillic" ? t("switcher1") : t("switcher2")}
+          </h1>
         </div>
 
         <button
@@ -88,13 +91,13 @@ const ConverterBoard = () => {
           <ArrowLeftRight className="w-5 h-5" />
         </button>
 
-        <div className="px-4 w-20">
+        <div className="w-32 text-center">
           <h1>{mode === "latin-to-cyrillic" ? "Кирилл" : "Lotin"}</h1>
         </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-        <div className="relative rounded-xl p-4 shadow-sm min-h-[200px] bg-white">
+        <div className="relative rounded-xl p-4 shadow-sm min-h-[200px] md:min-h-[400px] bg-white">
           <button
             onClick={handleClear}
             title="Tozalash"
@@ -107,7 +110,7 @@ const ConverterBoard = () => {
             ref={inputRef}
             value={input}
             onChange={handleChange}
-            placeholder="Bu yerga lotin yoki kirill yozuviga o‘girish kerak bo‘lgan matnni kiriting..."
+            placeholder={t("placeholderInput")}
             className="w-full outline-none resize-none bg-transparent overflow-hidden pr-4"
             style={{ height: "auto" }}
           />

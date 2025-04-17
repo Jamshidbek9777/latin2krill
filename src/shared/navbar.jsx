@@ -11,7 +11,7 @@ const Navbar = () => {
     { key: "uz", label: "O'zbek" },
     { key: "ru", label: "Русский" },
     { key: "en", label: "English" },
-    { key: "kr", label: "Ўзбек" },
+    { key: "Ўз", label: "Ўзбек" },
   ];
 
   const changeLanguage = (language) => {
@@ -22,10 +22,10 @@ const Navbar = () => {
   return (
     <div className="bg-white shadow-sm">
       <Wrapper>
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           <div className="flex text-2xl font-semibold text-[#004AAD] gap-2 items-center cursor-pointer">
             <img src="/img/logo.png" alt="logo" className="w-12" />
-            <h1>Latin to Krill</h1>
+            <h1>Latin2Krill</h1>
           </div>
 
           <Dropdown

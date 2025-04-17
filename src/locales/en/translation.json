@@ -1,3 +1,9 @@
 {
-  "nav1": "En"
+  "switcher1": "Latin",
+  "switcher2": "Cyrillic",
+
+  "placeholderInput": "Type here text to convert...",
+
+  "footer1": "Cyrillic converter",
+  "footer2": "This tool helps you easily convert Uzbek text between Latin and Cyrillic scripts. Designed to preserve spelling accuracy and make script transition seamless."
 }

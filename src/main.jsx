@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import "./index.css";
 import "./config/i18n.js";
 import Navbar from "./shared/navbar.jsx";
+import Footer from "./shared/footer.jsx";
 
 const Root = () => {
   return (
@@ -13,6 +14,7 @@ const Root = () => {
       <Routes>
         <Route path="/" element={<App />} />
       </Routes>
+      <Footer />
     </>
   );
 };
